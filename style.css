@@ -1,0 +1,182 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Complete page */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+/* Main container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Balance */
+.balance {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.balance h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.balance h3 {
+    font-size: 30px;
+}
+
+/* Income and Expense */
+.summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.income,
+.expense {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.income {
+    background: #e8f8ee;
+}
+
+.expense {
+    background: #fdeaea;
+}
+
+.income p {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.expense p {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Form */
+.transaction-form {
+    margin-bottom: 30px;
+}
+
+.transaction-form h2,
+.history h2 {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+/* Transaction history */
+.history ul {
+    list-style: none;
+}
+
+.history li {
+    background: #f8f9fa;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+/* Mobile responsive */
+@media (max-width: 500px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .summary {
+        flex-direction: column;
+    }
+
+}
+
+/* Income / Expense Radio Buttons */
+
+.transaction-type {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.transaction-type label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.transaction-type input[type="radio"] {
+    width: 16px !important;
+    height: 16px;
+    margin: 0 !important;
+    padding: 0;
+    cursor: pointer;
+}

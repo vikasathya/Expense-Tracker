@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Website Heading -->
+        <h1>Expense Tracker</h1>
+
+        <p>Manage your income and expenses easily.</p>
+
+        <!-- Balance Section -->
+        <div class="balance">
+            <h2>Current Balance</h2>
+            <h3>₹0</h3>
+        </div>
+
+        <!-- Income and Expense -->
+        <div class="summary">
+
+            <div class="income">
+                <h3>Income</h3>
+                <p>₹0</p>
+            </div>
+
+            <div class="expense">
+                <h3>Expense</h3>
+                <p>₹0</p>
+            </div>
+
+        </div>
+
+        <!-- Add Transaction -->
+        <div class="transaction-form">
+
+            <h2>Add Transaction</h2>
+
+            <form>
+
+                 <label for="description">Description</label>
+
+    <input
+        type="text"
+        id="description"
+        placeholder="Enter description"
+        required
+    >
+
+    <label for="amount">Amount</label>
+
+    <input
+        type="number"
+        id="amount"
+        placeholder="Enter amount"
+        min="1"
+        required
+    >
+
+    <label>Transaction Type</label>
+
+    <div class="transaction-type">
+
+        <label>
+            <input type="radio" name="type" value="income" checked>
+            Income
+        </label>
+
+        <label>
+            <input type="radio" name="type" value="expense">
+            Expense
+        </label>
+
+    </div>
+
+    <button type="submit">Add Transaction</button>
+
+            </form>
+
+        </div>
+
+        <!-- Transaction History -->
+        <div class="history">
+
+            <h2>Transaction History</h2>
+
+            <ul>
+                <li>
+                    No transactions yet.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
